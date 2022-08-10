@@ -12,6 +12,10 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.stream.Collectors;
 
+/**
+ * @author richard
+ * Classe TondeuseMain
+ */
 @QuarkusMain
 public class TondeuseMain {
 
@@ -21,6 +25,11 @@ public class TondeuseMain {
         System.out.println(rep);
     }
 
+    /**
+     * Lancer les tondeuses en passant le fichier des instructions en paramètre
+     * @param path
+     * @return La position finale des tondeuses
+     */
     public static String lancerTondeuses (Path path) {
 
         try {
@@ -63,7 +72,7 @@ public class TondeuseMain {
             System.out.println("---- ERREUR : Fichier introuvable !");
             return null;
         } catch (Exception ex) {
-            System.out.println("--- ERROR :" + ex);
+           ex.printStackTrace();
             return null;
         }
     }

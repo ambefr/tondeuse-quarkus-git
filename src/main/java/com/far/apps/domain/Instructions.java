@@ -1,5 +1,8 @@
 package com.far.apps.domain;
 
+/**
+ * Enumération des instructions
+ */
 public enum Instructions {
     AVANCER("A"),
     GAUCHE("G"),

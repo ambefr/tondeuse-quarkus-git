@@ -1,5 +1,8 @@
 package com.far.apps.domain;
 
+/**
+ * Enumération des orientations
+ */
 public enum Orientations {
     NORTH("N"),
     EAST("E"),
@@ -14,4 +17,5 @@ public enum Orientations {
     public String getValue(){
         return this.value;
     }
+
 }
